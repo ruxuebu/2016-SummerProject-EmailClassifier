@@ -1,0 +1,14 @@
+{
+  "name": "emailcallssifier",
+  "version": "1.0.0",
+  "description": "2016 summer project(Stevens Institute of Technology)",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [
+    "email",
+    "classifier"
+  ],
+  "author": "zihowe",
+  "license": "ISC"
+}

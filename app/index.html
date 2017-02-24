@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+  <head>
+    <title>email classifier(stevens institute of technology)</title>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
+    
+  </head>
+  <body>
+      
+    <div id="header"></div> <!--header --> 
+    <div id="welcome" class="hidden"></div> 
+    <div id="wrapper" class="">
+      <!-- Sidebar -->
+        <div id="sidebar-wrapper" class="hidden">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Email (SIT)
+                    </a>
+                </li>
+                <li>
+                    <a id="inbox-button"  href="#">Inbox</a>
+                </li>
+                <li>
+                    <a id="personal-button"  href="#">Personal</a>
+                </li>
+                <li>
+                    <a id="promotion-button" href="#">Promotion</a>
+                </li>
+                <li>
+                    <a  id="stevens-button" href="#">Stevens</a>
+                </li>
+                <li>
+                    <a  id="trash-button" href="#">Trash</a>
+                </li>
+                <li>
+                    <a  id="about-button" href="views/aboutus.html">About</a>
+                </li>
+                <li>
+                    <a  id="services-button" ref="#">Services</a>
+                </li>
+                <li>
+                    <a  id="contact-button" href="views/contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div id="mailPage" class="container-fluid hidden">
+                <div id='mailcontent' class="row">
+                    <div class="col-xs-12 col-md-8">
+                        <div class="row"> 
+                            <div class="col-xs-12">
+                                <div class="col-xs-12">
+                                <div class="btn-group pull-left">
+                                <button type="button" class="btn btn-inverse my-button" id="menu-toggle">
+                                    <span class="glyphicon glyphicon-th-list"></span></button>
+                                    
+                                <button type="button" class="btn btn-info my-button" data-toggle="collapse" data-target="#search-option">search option <span class="caret"></span></button>
+                                    
+                                <button type="button" id="delete-button" class="btn btn-success my-button"><i class="glyphicon glyphicon-search"></i></button>
+                                <!-- trash button -->
+                                <button type="button" id="trash-to-button" class="btn btn-danger my-button"><i class="glyphicon glyphicon-trash"></i></button>
+                                </div>
+                               
+                                <div class="inline-block pull-right hidden-xs hidden-sm hidden-md" id="today"></div>
+                                </div> <!-- end col-xs-12 && btn-group pull-lef-->
+                                  <div id="search-option" class="col-xs-12 collapse">
+                                    <form class="form" role="form">
+                                      <div class="col-xs-12 col-md-3 form-group my-button-inline">
+                                        <label for="keyword">key word: </label>
+                                        <input type="text" class="form-control" id="keyword">
+                                      </div>
+                                      <div class="col-xs-12 col-md-5 form-group my-button-inline">
+                                        <label for="time">time: </label>
+                                        <select id='time' class="form-control">
+                                          <option>older than 1 month</option>
+                                          <option>older than 3 month</option>
+                                          <option>older than 6 month</option>
+                                        </select>
+                                      </div>
+                                      <div class="col-xs-12 col-md-3 form-group my-button-inline">
+                                        <label for="tab-inbox">tab: </label>
+                                        <select id='tab-inbox' class="form-control">
+                                          <option>ALL</option>
+                                          <option>Unread</option>
+                                          <option>Read</option>
+                                          <option>Delete</option>
+                                        </select>
+                                      </div>
+                                    </form>
+                                  </div>
+                
+                            </div>
+                        </div>
+                        <div id="querymodal"></div>
+                        <div class='emails' id="inbox" class="hidden"></div>
+                        <div class='emails' id="personal" class="hidden"></div>
+                        <div class='emails' id="stevens" class="hidden"></div>
+                        <div class='emails' id="promotion" class="hidden"></div>
+                        <div class='emails' id="trash" class="hidden"></div> 
+                    </div>
+                    <div class="col-md-4 hidden-xs hidden-sm">
+                        <button  class="btn btn-inverse my-button" id="right-side-toggle" role="button">
+                          toggle preview</button>
+                        <div id="right-side-col">
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <div class="col-md-12 hidden-xs hidden-sm">
+                        
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div><!-- /#wrapper -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../bower_components/jquery-dateFormat/dist/jquery-dateFormat.min.js"></script>
+    <script src="./scripts/app.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+    <script src="./scripts/loadviews.js"></script>
+
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/simple-sidebar.css">
+    <link rel="stylesheet" type="text/css" href="./styles/mystyle.css">
+
+  </body>
+</html>

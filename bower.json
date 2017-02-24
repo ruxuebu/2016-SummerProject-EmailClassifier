@@ -1,0 +1,30 @@
+{
+  "name": "emailclssifier",
+  "homepage": "\"\"",
+  "authors": [
+    "HoweZZH <zhaozihao7199@gmail.com>"
+  ],
+  "description": "classify emails",
+  "main": "index.html",
+  "keywords": [
+    "email",
+    "gmail",
+    "googleapi",
+    "SIT"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "moment": "^2.13.0",
+    "jquery-dateFormat": "^1.0.2",
+    "font-awesome": "^4.6.3",
+    "jquery-ui": "^1.11.4"
+  }
+}

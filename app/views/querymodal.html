@@ -1,0 +1,37 @@
+<!-- Modal for query-->
+<div>
+    <div id="query_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">  <!-- modal header -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+            
+          <div class="modal-body">  <!-- modal body -->
+             <div class="row">
+                 <div class="col-md-12">
+                     <table class="row table table-striped ">
+                        <thead>
+                          <tr>    
+                                    <th class="col-md-2">From</th>
+                                    <th class="col-md-8">Subject</th>
+                                    <th class="col-md-2">Date/Time</th>
+                           </tr>
+                        </thead>
+                        <tbody id='query_tbody'></tbody>
+                      </table>
+                 </div>
+             </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <div id="pop_up_modal"> </div>    <!-- email content in modal form for query-->
+</div>
