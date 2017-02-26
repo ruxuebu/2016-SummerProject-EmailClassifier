@@ -9,7 +9,7 @@ We record weekly report at: https://sites.google.com/site/emailclassifier2016/
 To successsfully run this applicaiton, please follow the instructions:     
  1. you need to install npm and bower
 
-2. cd to root directory, "(sudo) bower install"
+ 2. cd to root directory, "(sudo) bower install"
 
 3. in root directory not app use, run “python -m SimpleHTTPServer” to run local host
 
