@@ -4,7 +4,7 @@ Members:  Ruxue Bu, Bo Li, Tianxiao Yang, Zihao Zhao
 
 We Deployed the application on: http://www.yangtianxiao.rocks/
 
-We record weekly report at: https://sites.google.com/site/emailclassifier2016/
+We recorded the weekly reports at: https://sites.google.com/site/emailclassifier2016/
  
 To successsfully run this applicaiton, please follow the instructions:     
  1. you need to install npm and bower
